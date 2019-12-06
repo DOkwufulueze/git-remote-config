@@ -66,12 +66,6 @@ then
     done
 fi
 
-# echo "${gitPathName}" remote add upstream-"${sourceGitUpstream}" "${sourceGitUpstreamURL}"
-# echo "${gitPathName}" remote add upstream-"${destinationGitUpstream}" "${destinationGitUpstreamURL}"
-# echo "${gitPathName}" fetch upstream-"${sourceGitUpstream}"
-# echo "${gitPathName}" merge upstream-"${sourceGitUpstream}"/master
-# echo "${gitPathName}" push upstream-"${destinationGitUpstream}" master
-
 git -C "${gitPathName}" remote add upstream-"${sourceGitUpstream}" "${sourceGitUpstreamURL}" &&
 git -C "${gitPathName}" remote add upstream-"${destinationGitUpstream}" "${destinationGitUpstreamURL}" &&
 git -C "${gitPathName}" fetch upstream-"${sourceGitUpstream}" &&
